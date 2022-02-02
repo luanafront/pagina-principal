@@ -1,0 +1,99 @@
+
+  
+:root {
+    --cor-fundo-geral: #FFEAEC;
+    --cor-fundo-login: #FFFFFF;
+    --cor-rosa-escuro: #F39A9D;
+    --estilo-fonte-geral: arial, Helvetica, sans-serif;
+}
+body {
+    margin: 0;
+    background-color: var(--cor-fundo-geral);
+    font-family: var(--estilo-fonte-geral);
+}
+.cabecalho {
+    background-color: var(--cor-fundo-geral);
+    display: flex;
+    justify-content: space-between;
+}
+    .cabecalho__sair {
+        color: var(--cor-rosa-escuro);
+        margin: 10px 0 10px 20px;
+    }
+    .cabecalho__meuperfil {
+        color: var(--cor-rosa-escuro);
+        margin: 10px 20px 10px 20px;
+    }
+.principal {
+    
+}
+    .principal__publicar{
+        background-color: var(--cor-fundo-login);
+        border-radius: 40px 40px 0 0;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80px;
+}
+    .publicar__foto {
+        height: 60px;
+        width: 60px;
+        border-radius: 50px;
+        margin-right: 10px;
+    }
+    .publicar__texto {
+        height: 38px;
+        width: 320px;
+        border-radius: 20px;
+        border: 0;
+        background-color: var(--cor-fundo-geral);
+        text-align: left ;
+    }
+    .feed {
+        background-color: var(--cor-rosa-escuro);
+        border-radius: 40px 40px 0 0;
+    }
+        .feed__titulo {
+            margin: 0;
+            text-align: center;
+            color: var(--cor-fundo-geral);
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 35px;   
+            font-weight: 20;
+        }
+    .feed__publicacoes{}
+        .publicacao {
+            list-style-type: none;
+        }
+        .perfil{
+            display: flex;
+            justify-content: unset;
+        }
+            .publicacao__perfil{
+                height: 40px;
+                width: 40px;
+                border-radius: 50px;
+                margin-right: 10px;
+            }
+            .publicacao__nome {
+                color: var(--cor-fundo-geral);
+            }
+            .texto__publicado {
+                background-color: var(--cor-fundo-geral);
+                color: var(--cor-rosa-escuro);
+            }
+        .post {
+            display: flex;
+            justify-content: space-between;
+            color: var(--cor-rosa-escuro);
+            background-color: var(--cor-fundo-geral);
+            border-radius: 20px;
+            padding: 20px;
+            height: 20px;
+            width: 20px;
+        }
+
