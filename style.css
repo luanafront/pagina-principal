@@ -25,11 +25,10 @@ body {
         margin: 10px 20px 10px 20px;
     }
 .principal {
-    
+    background-color: var(--cor-fundo-login);
+    border-radius: 40px 40px 0 0;
 }
     .principal__publicar{
-        background-color: var(--cor-fundo-login);
-        border-radius: 40px 40px 0 0;
         height: 100px;
         display: flex;
         align-items: center;
@@ -49,6 +48,7 @@ body {
         border: 0;
         background-color: var(--cor-fundo-geral);
         text-align: left ;
+        padding-left: 10px;
     }
     .feed {
         background-color: var(--cor-rosa-escuro);
@@ -65,9 +65,14 @@ body {
             font-size: 35px;   
             font-weight: 20;
         }
-    .feed__publicacoes{}
+    .feed__publicacoes{
+        padding: 0;
+        margin: 0;
+    }
         .publicacao {
             list-style-type: none;
+            margin: 20px;
+            
         }
         .perfil{
             display: flex;
@@ -85,15 +90,70 @@ body {
             .texto__publicado {
                 background-color: var(--cor-fundo-geral);
                 color: var(--cor-rosa-escuro);
+                border-radius: 50px;
+                padding: 20px 30px ;
             }
         .post {
             display: flex;
             justify-content: space-between;
             color: var(--cor-rosa-escuro);
-            background-color: var(--cor-fundo-geral);
             border-radius: 20px;
-            padding: 20px;
-            height: 20px;
-            width: 20px;
+            margin: 0;
         }
+        .reacao {
+            margin: 0;
+        }
+        .publicacao__legenda {
+            margin-left: -10px;
+        }
+        .publicacao__foto {
+            display: block;
+            margin: 0 auto 10px auto; 
+        }
+.rodape {
+    background-color: var(--cor-rosa-escuro);
+}
+        .rodape__fim {
+            margin: 0;
+            color: var(--cor-fundo-login);
+            padding: 10px 20px;
+            
+        }
+        .rodape__fim  a {
+            color: var(--cor-fundo-login);
+            cursor: pointer;
+        }
+@media(min-width:730px) {
+    .principal {
+        width:50% ;
+       margin: 0 auto;
+       margin-bottom: 50px;
+       border-radius: 40px;
+    }          
+        .principal__publicar {
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-left: 20px;
+            
+        } 
+            .publicar__texto {
+                width: 90%;
+            }
+            .publicacao__foto {
+                width: 90%;
+            }
+            .feed {
+               border-radius: 40px; 
+            }
+
+    .rodape {
+        background-color: transparent;
+    }
+    .ajuste__imagem {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
 
